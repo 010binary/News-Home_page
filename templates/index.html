@@ -27,11 +27,21 @@
         </svg>
         <nav>
           <ul>
-            <li class="Home sec-paragraph"><a rel="noopener" href="#">Home</a></li>
-            <li class="New sec-paragraph"><a rel="noopener" href="#">New</a></li>
-            <li class="Popular sec-paragraph"><a rel="noopener" href="#">Popular</a></li>
-            <li class="Trending sec-paragraph"><a rel="noopener" href="#">Trending</a></li>
-            <li class="Categoriessec-paragraph"><a rel="noopener" href="#">Categories</a></li>
+            <li class="Home sec-paragraph">
+              <a rel="noopener" href="#">Home</a>
+            </li>
+            <li class="New sec-paragraph">
+              <a rel="noopener" href="#">New</a>
+            </li>
+            <li class="Popular sec-paragraph">
+              <a rel="noopener" href="#">Popular</a>
+            </li>
+            <li class="Trending sec-paragraph">
+              <a rel="noopener" href="#">Trending</a>
+            </li>
+            <li class="Categoriessec-paragraph">
+              <a rel="noopener" href="#">Categories</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -50,33 +60,36 @@
         <button class="btn">Read more</button>
       </section>
       <aside class="second-side">
-        <h2>New</h2>
-        <section class="news">
-          <h3 class="title">Hydrogen VS Electric Cars</h3>
-          <p class="preview-text sec-paragraph">
-            Will hydrogen-fueled cars ever catch up to EVs?
-          </p>
-        </section>
-        <section class="news">
-          <h3 class="title">The Downsides of AI Artistry</h3>
-          <p class="preview-text sec-paragraph">
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </section>
-        <section class="news">
-          <h3 class="title">Is VC Funding Drying Up?</h3>
-          <p class="preview-text sec-paragraph">
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
+        <section>
+          <h2>New</h2>
+          <section class="news">
+            <h3 class="title">Hydrogen VS Electric Cars</h3>
+            <p class="preview-text sec-paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </section>
+          <section class="news">
+            <h3 class="title">The Downsides of AI Artistry</h3>
+            <p class="preview-text sec-paragraph">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </section>
+          <section class="news" style="border: none;">
+            <h3 class="title">Is VC Funding Drying Up?</h3>
+            <p class="preview-text sec-paragraph">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </section>
         </section>
       </aside>
       <section class="third-side">
+        <div>
         <img
           src="{{ url_for('static', filename='images/image-retro-pcs.jpg') }}"
           alt=" Blog Picture"
-        />
+        /></div>
         <h4>01</h4>
         <h5 class="sec-heading">Reviving Retro PCs</h5>
         <p class="sec-paragraph">
@@ -105,18 +118,18 @@
           How the pandemic has sparked fresh opportunities.
         </p>
       </section>
+      <footer class="footer-side">
+        <div>
+          Challenge by
+          <a
+            rel="noopener"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Alpha</a>.
+        </div>
+      </footer>
     </div>
-    <footer class="footer-side">
-      <div>
-        Challenge by
-        <a
-          rel="noopener"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Alpha</a>.
-      </div>
-    </footer>
     <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
   </body>
 </html>
